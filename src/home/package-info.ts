@@ -1,3 +1,3 @@
 import { BusinessContext } from '../BusinessContext';
 
-export class HomContext extends BusinessContext {}
+export class HomeContext extends BusinessContext {}
