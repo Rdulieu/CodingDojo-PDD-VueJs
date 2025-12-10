@@ -10,19 +10,11 @@ Instructions for building high-quality VueJS 3 applications with the Composition
 ## Project Context
 - Vue 3.x with Composition API as default
 - TypeScript for type safety
-- Single File Components (`.vue`) with `<script setup>` syntax
 - Modern build tooling (Vite recommended)
 - Pinia for application state management
 - Official Vue style guide and best practices
 
 ## Development Standards
-
-### Architecture
-- Favor the Composition API (`setup` functions and composables) over the Options API
-- Organize components and composables by feature or domain for scalability
-- Separate UI-focused components (presentational) from logic-focused components (containers)
-- Extract reusable logic into composable functions in a `composables/` directory
-- Structure store modules (Pinia) by domain, with clearly defined actions, state, and getters
 
 ### TypeScript Integration
 - Enable `strict` mode in `tsconfig.json` for maximum type safety
@@ -57,7 +49,6 @@ Instructions for building high-quality VueJS 3 applications with the Composition
 
 ### Styling
 - Use `<style scoped>` for component-level styles or CSS Modules
-- Consider utility-first frameworks (Tailwind CSS) for rapid styling
 - Follow BEM or functional CSS conventions for class naming
 - Leverage CSS custom properties for theming and design tokens
 - Implement mobile-first, responsive design with CSS Grid and Flexbox
