@@ -1,6 +1,6 @@
 # PDD - Vue
 
-Lien vers les slides : TODO
+Lien vers les slides : [SLIDES](https://drive.google.com/file/d/1oLTGYE9GFR4J1ejDSoOJ4ixsDGhY3pQ6/view?usp=sharing)
 
 # Exercice 1 : Prompting
 
