@@ -8,7 +8,19 @@ const router = createRouter({
       name: 'home',
       component: () =>
         import('../home/infrastructure/primary/HomePage.vue'),
-    }
+    },
+    {
+      path: '/transactions',
+      name: 'transactions',
+      component: () =>
+        import('../transactions/infrastructure/primary/TransactionsPage.vue'),
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: () =>
+        import('../profile/infrastructure/primary/ProfilePage.vue'),
+    },
   ],
 })
 
