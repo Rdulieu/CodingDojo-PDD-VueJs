@@ -1,0 +1,54 @@
+<div class="account-page">
+  <h1 class="page-title">Transactions</h1>
+
+  <section class="accounts-section">
+    <h2 class="section-title">Mes comptes</h2>
+    <div class="accounts-grid">
+      <div class="account-card account-card--courant" v-if="accountCourant">
+        <div class="account-card__label">{{ accountCourant.getLabel() }}</div>
+        <div class="account-card__balance-label">Solde</div>
+        <div class="account-card__balance">{{ accountCourant.getFormattedBalance() }}</div>
+      </div>
+
+      <div class="account-card account-card--epargne" v-if="accountEpargne">
+        <div class="account-card__label">{{ accountEpargne.getLabel() }}</div>
+        <div class="account-card__balance-label">Solde</div>
+        <div class="account-card__balance">{{ accountEpargne.getFormattedBalance() }}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="transactions-section">
+    <div class="transactions-header">
+      <h2 class="section-title">Transactions récentes</h2>
+      <button class="btn-new-transaction">+ Nouveau virement</button>
+    </div>
+
+    <div class="transactions-table-wrapper">
+      <table class="transactions-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Identifiant</th>
+            <th>Type</th>
+            <th>Compte</th>
+            <th>Date</th>
+            <th>Montant</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="transaction in transactions" :key="transaction.getId()">
+            <td>{{ transaction.getDescription() }}</td>
+            <td>{{ transaction.getIdentifier() }}</td>
+            <td>{{ transaction.getType() }}</td>
+            <td>{{ transaction.getAccountLabel() }}</td>
+            <td>{{ transaction.getFormattedDate() }}</td>
+            <td :class="['amount', transaction.getAmountClass()]">
+              {{ transaction.getFormattedAmount() }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
