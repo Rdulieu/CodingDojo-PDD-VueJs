@@ -1,56 +1,34 @@
-# Template for IA Gen practice
+# PDD - Angular
 
-[![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)](https://vuejs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)](https://www.cypress.io/)
+Lien vers les slides : TODO
 
+# Exercice 1 : Prompting
 
-## 🛠️ Prerequisites
+## Objectif
 
-- Node.js (v16 or higher)
-- npm (v7 or higher)
+L'objectif de cet exercice est de vous familiariser avec le prompting
 
-## 📥 Installation
+## Consignes
 
-Clone the repository and install dependencies:
+Le but est de générer une nouvelle page assez simple d'une application banquaire. 
+Nous fournissons un squelette d'application. A vous de développer à l'aide d'un agent IA les éléments suivants par ordre de priorité : 
+1. Une nouvelle page avec 
+  - 2 cartes contenant les balances des comptes banquaires
+  - Un tableau contenant les transactions récentes
+2. Une navbar avec un logo et plusieurs menu. Le premier redirigeant vers la route /accounts qui affichera la nouvelle page développé
+3. Un header dynamique dont le titre change en fonction de la page/route affiché.
 
-```bash
-# Clone the repository
-git clone <repository-url>
+![Bank-screenshot-1.png](docs/Bank-screenshot-1.png)
 
-# Navigate to the project directory
-cd template-ia-gen/vue
+Vous pouvez utiliser des captures d'écrans de ce [Figma](https://www.figma.com/design/Lr5Hm993288BcRGY3oIMUA/Meetup---LyonJS?node-id=421-528&p=f&t=Cgv2c5iH3Vs6V4uK-0)
 
-# Install dependencies
-npm install
-```
+Si besoin, voici une aide pour Cypress [Cheat Sheet Cypress](https://ikalamtech.com/wp-content/uploads/2024/08/Cypress-Cheat-Sheet.pdf)
 
-## 🚀 Running the Application
+# Exercice 2 : Serveur MCP
 
-To start the development server:
+## Objectif
+Se familiariser avec l'utilisation d'un serveur MCP
 
-```bash
-npm run dev
-```
-
-This will launch the application in development mode. Open your browser and navigate to the URL shown in the terminal (typically http://localhost:5173).
-
-## 🧪 Testing
-
-The project includes two types of tests:
-
-### End-to-End Tests (Cypress)
-
-Run Cypress tests in headless mode:
-
-```bash
-npm run test:e2e:headless
-```
-
-### Hexagonal Architecture Tests
-
-Verify that the code follows hexagonal architecture principles:
-
-```bash
-npm run test:unit
-```
+## Consignes
+Comme pour l'exercice 1, mais avec un écran plus compliqué à choisir dans ce [Figma](https://www.figma.com/design/Lr5Hm993288BcRGY3oIMUA/Meetup---LyonJS?node-id=78-351&t=Cgv2c5iH3Vs6V4uK-0)  
+Cette fois ci, au lieu de donner une capture d'écran, vous pouvez utiliser le MCP figma en donnant directement le lien à votre agent
