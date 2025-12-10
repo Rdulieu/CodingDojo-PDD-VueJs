@@ -1,4 +1,4 @@
-# PDD - Angular
+# PDD - Vue
 
 Lien vers les slides : TODO
 
